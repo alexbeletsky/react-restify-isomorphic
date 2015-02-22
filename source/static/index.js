@@ -10,6 +10,7 @@ function staticService(app) {
 		req.mongo.availability.find({}, {_id: 1, city: 1, routingSupport: 1}).sort({_id: 1}, function (err, results) {
 			next.ifError(err);
 
+			// initial application state
 			var state = {cities: results};
 			var content = React.renderToString(new App(state));
 
