@@ -1,3 +1,4 @@
+// enable es6 features in node
 require("babel/register");
 
 var restify = require('restify');
@@ -15,9 +16,13 @@ var port = process.env.PORT || 3012;
 app.use(middleware.mongo(config));
 app.use(restify.queryParser());
 
+// applications api
 require('./source/api')(app);
+
+// master.html, assets
 require('./source/static')(app, restify);
 
+// configurations
 nunjucks.configure('./views');
 jsx.install();
 

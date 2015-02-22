@@ -12,8 +12,11 @@ function staticService(app) {
 
 			// initial application state
 			var state = {cities: results};
+
+			// render application
 			var content = React.renderToString(new App(state));
 
+			// render master html page (injects react content and initial state)
 			nunjucks.render('master.html', {app: '/build/main.js', react: content, state: JSON.stringify(state)}, function (err, body) {
 				next.ifError(err);
 
@@ -28,7 +31,7 @@ function staticService(app) {
 		});
 	});
 
-	// serve static
+	// serve static (js, css)
 	app.get('/.*', auth, restify.serveStatic({
 		directory: __dirname + '/../../public',
 		default: 'index.html'
