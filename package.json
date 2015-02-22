@@ -1,0 +1,44 @@
+{
+  "name": "react-restify-isomorphic",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "babel": "^4.4.5",
+    "bootstrap-sass": "^3.3.3",
+    "colors": "^1.0.3",
+    "gulp-livereload": "^3.7.0",
+    "hiredis": "^0.2.0",
+    "lodash": "^3.2.0",
+    "moment": "^2.9.0",
+    "mongojs": "^0.18.1",
+    "mysql": "^2.5.4",
+    "node-jsx": "^0.12.4",
+    "node-logentries": "^0.1.4",
+    "nunjucks": "^1.2.0",
+    "react": "^0.12.2",
+    "redis": "^0.12.1",
+    "restify": "^2.8.5",
+    "superagent": "^0.21.0"
+  },
+  "devDependencies": {
+    "babelify": "^5.0.3",
+    "browserify": "^6.0.3",
+    "gulp": "^3.8.11",
+    "gulp-browserify": "^0.5.1",
+    "gulp-compass": "^2.0.3",
+    "gulp-connect": "^2.2.0",
+    "gulp-open": "^0.3.2",
+    "gulp-plumber": "^0.6.6",
+    "gulp-rename": "^1.2.0",
+    "gulp-watch": "^4.1.1",
+    "reactify": "^1.0.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon --watch views --watch source --watch config --watch app.js app.js"
+  },
+  "author": "alexander.beletsky@gmail.com",
+  "license": "MIT"
+}

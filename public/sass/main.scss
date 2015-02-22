@@ -1,0 +1,34 @@
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import "toggle";
+
+body {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 20px;
+	color: #333c3c;
+}
+
+#app {
+	padding: 20px 0;
+}
+
+ul.cities {
+	width: 700px;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+
+	li {
+		padding: 15px;
+		border: 1px solid #c6c6c6;
+		margin: 15px 0;
+
+		span.city {
+			display: inline-block;
+			width: 85%;
+			font-size: 2em;
+			font-weight: 300;
+			line-height: 2em;
+		}
+	}
+}
