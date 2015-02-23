@@ -11,7 +11,7 @@ gulp.task('browserify', function () {
 		.pipe(plumber())
 		.pipe(browserify({
 			debug: true,
-			transform: ['babelify', 'reactify']
+			transform: ['babelify']
 		}))
 		.pipe(rename('main.js'))
 		.pipe(gulp.dest('public/build'))
