@@ -33,8 +33,7 @@ function staticService(app) {
 
 	// serve static (js, css)
 	app.get('/.*', restify.serveStatic({
-		directory: __dirname + '/../../public',
-		default: 'index.html'
+		directory: __dirname + '/../../public'
 	}));
 }
 
